@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+:root {
+    --color-pastel-pink: #FFB3C1; 
+    --color-pastel-blue: #A2D2FF;
+    --color-pastel-mint: #B9FBC0; 
+    --color-dark-purple: #3A0CA3; 
+    --color-text-dark: #1F1F1F;
+    --color-text-light: #F0F0F0;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Comfortaa', cursive; 
+}
+
+        .story-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--color-pastel-blue) 0%, var(--color-pastel-pink) 100%); /* Gradient nền */
+        }
+
+        .profile-image-box {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-image-box img {
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 0 0 8px var(--color-pastel-pink); 
+            transition: transform 0.3s;
+        }
+
+        .profile-image-box img:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .info-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 25px; 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); 
+            border: 2px solid var(--color-pastel-blue); 
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 1.5rem;
+            color: var(--color-dark-purple);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-card h3 i {
+            margin-right: 12px;
+            font-size: 1.8rem;
+            color: var(--color-pastel-pink); 
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-card li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: var(--color-text-dark);
+            line-height: 1.5;
+        }
+        
+        .tag-list-new {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-list-new span {
+            background-color: var(--color-pastel-blue);
+            color: var(--color-dark-purple);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid var(--color-pastel-pink);
+        }
+        
+        .text-detail {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .text-detail strong {
+            display: block;
+            color: var(--color-pastel-pink);
+            font-weight: 700;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        /* Sở Thích Cá Nhân */
+        .hobbies-section {
+            padding: 60px 0;
+            background-color: var(--color-pastel-pink);
+        }
+        .hobbies-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .hobby-item {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+        .hobby-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 0 0 5px var(--color-pastel-blue);
+        }
+        .hobby-item p {
+            margin-top: 10px;
+            font-weight: 600;
+            color: white; 
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+            <h1 class="logo"><a href="index.html">My Vibe</a></h1>
+            <nav class="main-nav" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html" class="active">Giới Thiệu</a></li>
+                    <li><a href="portfolio.html">Dự Án</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-heart"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="story-section">
+            <div class="container">
+                <h2 style="font-family: 'Comfortaa', sans-serif; font-size: 2.8rem; color: var(--color-dark-purple); text-align: center; margin-bottom: 20px;">~ Hello, I'm Na Na! ~</h2>
+                
+                <div class="profile-image-box">
+                    <img src="img/avt.jpg" alt="Ảnh đại diện cá nhân">
+                </div>
+                <div class="content-wrapper" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--color-text-dark);">
+                        Tui là một Character Designer nghiệp dư đam mê cân bằng giữa cái đẹp và sự hoàn hảo. Tui tin rằng mọi sản phẩm sẽ được tạo ra với nét đẹp phù hợp với yêu cầu của bạn và mắt nhìn của tui.
+                        <br>Hơn thế tui mong muốn được thể hiện màu sắc cá nhân để đem đến cho mọi người một cái nhìn khác về tui.
+                    </p>
+                    
+                    <div class="info-grid">
+                        
+                        <div>
+                            <div class="info-card">
+                                <h3><i class="fas fa-user-circle"></i> Vibe Info</h3>
+                                <ul style="line-height: 1.8;">
+                                    <li>Họ và tên: Trần TiNa</li>
+                                    <li>Địa chỉ: C4 Điện Biên Phủ P.25 Q.Bình Thạnh Tp. Hồ chí Minh </li>
+                                    <li>Email: <a href="mailto:natt1287@ut.edu.vn" style="color: var(--color-dark-purple);">natt1287@ut.edu.vn</a></li>
+                                    <li>Công việc: Sinh viên năm 3<br>         Khoá 23<br></li>
+                                </ul>
+                            </div>
+
+                            <div class="info-card" style="margin-top: 25px;">
+                                <h3><i class="fas fa-rocket"></i> Superpowers</h3>
+                                <div class="tag-list-new">
+                                    <span>Character Design</span>
+                                    <span>Form & Perspective</span>
+                                    <span>Color Theory</span>
+                                    <span>Lighting & Shading</span>
+                                    <span>Gesture Drawing</span>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card" style="margin-top: 25px;">
+                                <h3><i class="fas fa-heart"></i> Favorite Things</h3>
+                                <div class="tag-list-new">
+                                    <span>Nghe nhạc</span>
+                                    <span>Chơi Game sinh tồn</span>
+                                    <span>Làm đồ thủ công</span>
+                                    <span>Vẽ nhân vật 2D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="info-card">
+                                <h3><i class="fas fa-graduation-cap"></i> School Life</h3>
+                                <div class="text-detail">
+                                    Khoá: 2023 - 2025
+                                    <strong>Công nghệ Thông tin</strong>
+                                    Đại học Giao Thông Vận Tải TP.HCM
+                                </div>
+                                
+                                <h4 style="font-size: 1.1rem; color: var(--color-dark-purple); margin-top: 20px;">Chứng Chỉ & Ngôn Ngữ:</h4>
+                                <div class="text-detail">
+                                    Chứng chỉ:
+                                    <p style="font-size: 0.95rem;">Hiện tại chưa có.</p>
+                                </div>
+                                <div class="text-detail" style="margin-top: 10px;">
+                                    Ngôn ngữ: Tiếng Anh B2.5, Tiếng Trung (HSK 3)
+                                </div>
+                            </div>
+
+                            <div class="info-card" style="margin-top: 25px;">
+                                <h3><i class="fas fa-laptop-code"></i> Tools and skills</h3>
+                                
+                                <h4 style="font-size: 1.1rem; color: var(--color-dark-purple);">Công cụ:</h4>
+                                <ul style="list-style-type: ''; padding-left: 20px; font-size: 0.95rem;">
+                                    <li>Photoshop/Ibispant (Vẽ)</li>
+                                    <li>IntelliJ IDEA (Java)</li>
+                                    <li>VS Code (C# C++ Python)</li>
+                                    <li>HTML/CSS (Cơ bản)</li>
+                                </ul>
+
+                                <h4 style="font-size: 1.1rem; color: var(--color-dark-purple); margin-top: 20px;">Mục tiêu:</h4>
+                                <ul style="list-style-type: ''; padding-left: 20px; font-size: 0.95rem;">
+                                    <li>Tìm kiếm cơ hội thực tập ở công ty Game/Junior Artist & Tester 2025.</li>
+                                    <li>Đào sâu vào Animation 2D/3D.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Trần TiNa. Send you a big heart.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
